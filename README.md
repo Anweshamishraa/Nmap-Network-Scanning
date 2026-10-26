@@ -158,7 +158,7 @@ The `-sA` option uses TCP ACK probes to examine network filtering behaviour. An 
 ## 7️⃣ Scan Report Generation
 
 ### Command
-![Scan Report](./SCAN%20REPORT.png)
+
 ```bash
 nmap -sV -oN nmap_scan_report.txt 192.168.204.129
 ```
@@ -168,8 +168,9 @@ To view the saved report:
 ```bash
 cat nmap_scan_report.txt
 ```
+The report records detected services, versions, and scan results for documentation and further analysis
+![Scan Report](./SCAN%20REPORT.png)
 
-The report records detected services, versions, and scan results for documentation and further analysis.
 
 ---
 
