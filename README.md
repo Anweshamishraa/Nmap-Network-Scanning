@@ -48,9 +48,7 @@ nmap -sn 192.168.204.0/24
 
 ### Screenshot
 
-
-![Host Discovery](screenshots/HOST%20DISCOVERY.png)
-
+![Host Discovery](./HOST%20DISCOVERY.png)
 ### Explanation
 
 The `-sn` option performs host discovery without a standard port scan. The supplied lab output shows four responsive hosts.
@@ -62,7 +60,7 @@ ping 192.168.204.129
 ```
 
 ### 1. Target IP Status
-![Target IP Status](screenshots/CHECK%20THE%20TARGET%20IP%20STATUS.png)
+![Target IP Status](./CHECK%20THE%20TARGET%20IP%20STATUS.png)
 
 The screenshot documents the target's response to ICMP ping requests.
 
@@ -76,7 +74,7 @@ The screenshot documents the target's response to ICMP ping requests.
 nmap 192.168.204.129
 ```
 
-![Port Scanning](screenshots/PORT%20SCANNING.png)
+![Port Scanning](./PORT%20SCANNING.png)
 
 ### Explanation
 
@@ -94,7 +92,7 @@ nmap -sV 192.168.204.129
 
 ### Screenshot
 
-![Service and Version Detection](https://raw.githubusercontent.com/Anweshamishraa/Network-Scanning-Using-Nmap/main/screenshots/scan_report.png)
+![Service and Version Detection](./SERVICE%20VERSION.png)
 
 ### Explanation
 
@@ -112,7 +110,7 @@ nmap -O 192.168.204.129
 
 ### Screenshot
 
-![OS Detection](screenshots/OS%20DETECTION.png)
+![Operating System Detection](./OS%20DETECTION.png)
 
 ### Explanation
 
@@ -130,7 +128,7 @@ nmap --script vuln 192.168.204.129
 
 ### Screenshot
 
-![NSE Script Scanning](screenshots/NSE%20SCRIPT%20SCANNING.png)
+![NSE Script Scanning](./NSE%20SCRIPT%20SCANNING.png)
 ### Explanation
 
 Nmap's vulnerability scripts reported potential issues associated with legacy services, including a vsftpd 2.3.4 backdoor and an SSLv3 POODLE-related finding.
@@ -149,7 +147,7 @@ nmap -sA 192.168.204.129
 
 ### Screenshot
 
-![Firewall Detection](screenshots/FIREWALL%20DETECTION.png)
+![Firewall Detection](./FIREWALL%20DETECTION.png)
 
 ### Explanation
 
@@ -160,7 +158,7 @@ The `-sA` option uses TCP ACK probes to examine network filtering behaviour. An 
 ## 7️⃣ Scan Report Generation
 
 ### Command
-![Nmap Scan Report](screenshots/SCAN%20REPORT.png)
+![Scan Report](./SCAN%20REPORT.png)
 ```bash
 nmap -sV -oN nmap_scan_report.txt 192.168.204.129
 ```
